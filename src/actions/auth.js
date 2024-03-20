@@ -21,9 +21,7 @@ import {
 // Load User
 export const loadUser = () => async (dispatch) => {
   try {
-    const res = await axios.get(
-      "https://mern-devapp-server.onrender.com/api/auth"
-    );
+    const res = await axios.get("https://mern-devapp-server.onrender.com/auth");
 
     dispatch({
       type: USER_LOADED,
