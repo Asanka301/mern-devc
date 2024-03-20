@@ -21,7 +21,7 @@ const Login = ({ login, isAuthenticated }) => {
   };
 
   if (isAuthenticated) {
-    return <Navigate to="https://mern-devapp-server.onrender.com/dashboard" />;
+    return <Navigate to="/dashboard" />;
   }
 
   return (
