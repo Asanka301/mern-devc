@@ -1,5 +1,6 @@
 import api from "../utils/api";
 import { setAlert } from "./alert";
+import axios from "axios";
 import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
@@ -20,7 +21,9 @@ import {
 // Load User
 export const loadUser = () => async (dispatch) => {
   try {
-    const res = await get("https://mern-devapp-server.onrender.com/api/auth");
+    const res = await axios.get(
+      "https://mern-devapp-server.onrender.com/api/auth"
+    );
 
     dispatch({
       type: USER_LOADED,
