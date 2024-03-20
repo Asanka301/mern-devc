@@ -4,7 +4,7 @@ import { LOGOUT } from "../actions/Types";
 
 // Create an instance of axios
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://mern-devapp-server.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
