@@ -8,7 +8,9 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to="/profiles">Developers</Link>
+        <Link to="https://mern-devapp-server.onrender.com/api/profiles">
+          Developers
+        </Link>
       </li>
       <li>
         <Link to="/posts">Posts</Link>
@@ -31,13 +33,19 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to="/profiles">Developers</Link>
+        <Link to="https://mern-devapp-server.onrender.com/api/profile">
+          Developers
+        </Link>
       </li>
       <li>
-        <Link to="/register">Register</Link>
+        <Link to="https://mern-devapp-server.onrender.com/api/register">
+          Register
+        </Link>
       </li>
       <li>
-        <Link to="/login">Login</Link>
+        <Link to="https://mern-devapp-server.onrender.com/api/login">
+          Login
+        </Link>
       </li>
     </ul>
   );
